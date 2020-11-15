@@ -80,11 +80,11 @@ end
 </pre>
 
 - Time: O(n<sup>2</sup>), Space: O(n)
-  - Correct! This code is similar to a loop within a loop where iterating over one element results in iterating over all of the elements again. This means it runs in quadratic time since the number of stack frames will equal the size of the input squared. The space is linear because the number of frames on the stack when it's at its deepest is proportional to the input size: specifically there will be `n` frames on the stack at the deepest layer.
+  - Correct! This code is similar to a loop within a loop where iterating over one element results in iterating over all of the elements again. This means it runs in quadratic time since the number of stack frames will equal the size of the input squared. The space is linear because the number of frames on the stack when it's at its deepest is proportional to the input size: specifically there will be <code>n</code> frames on the stack at the deepest layer.
 - Time: O(n<sup>2</sup>), Space: O(n<sup>2</sup>)
   - Not quite. This code is similar to a loop within a loop where iterating over one element results in iterating over all of the elements again. This means it runs in quadratic time since the number of stack frames will equal the size of the input squared. However, the space required is not quadratic. What is the largest number of frames that will be on the stack if the array has 2 elements versus 3 elements. Remember, frames get popped from the stack as recursive methods start returning.
 - Time: O(n), Space: O(n)
-  - Not quite. The space is linear because the number of frames on the stack when it's at its deepest is proportional to the input size: specifically there will be `n` frames on the stack at the deepest layer. However, the time is not linear. What is the total number of stack frames over time if the array length is 2 versus 4?
+  - Not quite. The space is linear because the number of frames on the stack when it's at its deepest is proportional to the input size: specifically there will be <code>n</code> frames on the stack at the deepest layer. However, the time is not linear. What is the total number of stack frames over time if the array length is 2 versus 4?
 - I don't know.
   - Don't worry. With time and practice, it'll start to sink in.
 
